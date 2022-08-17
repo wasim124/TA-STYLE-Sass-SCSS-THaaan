@@ -1,0 +1,88 @@
+/**general**/
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+input, button, textarea {
+    box-shadow: none;
+    outline: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: $font;
+    line-height: 1.5;
+    color: $textLight;
+    font-size: 1.4rem;
+}
+
+
+
+.container {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.padding{
+    padding: 6rem 0;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 900;
+    color: $textDark;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(35, 45, 56, 0.7);
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.3rem 1.6rem;
+    border: 1px solid $primary;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    background-color: $textWhite;
+    color:$primary;
+    border-radius: 1rem;
+    transition: all 200ms ease-in-out;
+    :hover {
+        box-shadow: 0 2px 6 px rgba(0, 0, 0, 0.3);
+        opacity: 0.8;
+        color: #ffffff !important;
+        background-color: $primary ;
+    }
+}
+.btn-primary{
+    @extend .btn;
+    background-color: $primary;
+    color: $textWhite;
+    :hover {
+        box-shadow: 0 2px 6 px rgba(0, 0, 0, 0.3);
+        opacity: 0.8;
+        color: $primary !important;
+        background-color: $textWhite  ;
+    }
+}

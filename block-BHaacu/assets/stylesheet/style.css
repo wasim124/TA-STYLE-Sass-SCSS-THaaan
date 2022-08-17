@@ -1,0 +1,508 @@
+/**var**/ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**general**/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+input, button, textarea {
+  box-shadow: none;
+  outline: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  line-height: 1.5;
+  color: rgb(147, 160, 189);
+  font-size: 1.4rem;
+}
+
+.container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.padding {
+  padding: 6rem 0;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgb(27, 30, 36);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(35, 45, 56, 0.7);
+}
+
+.btn, .btn-primary {
+  display: inline-block;
+  padding: 0.3rem 1.6rem;
+  border: 1px solid rgb(220, 60, 69);
+  margin-top: 2rem;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(220, 60, 69);
+  border-radius: 1rem;
+  transition: all 200ms ease-in-out;
+}
+.btn :hover, .btn-primary :hover {
+  box-shadow: 0 2px 6 px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  color: #ffffff !important;
+  background-color: rgb(220, 60, 69);
+}
+
+.btn-primary {
+  background-color: rgb(220, 60, 69);
+  color: rgb(255, 255, 255);
+}
+.btn-primary :hover {
+  box-shadow: 0 2px 6 px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  color: rgb(220, 60, 69) !important;
+  background-color: rgb(255, 255, 255);
+}
+
+/*flex*/
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.item-start {
+  align-items: flex-start;
+}
+
+.item-stretch {
+  align-items: stretch;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/*****/
+.flex-15 {
+  flex: 0 1 15%;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-48 {
+  flex: 0 1 48%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+.grow {
+  flex: 1 1 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*text*/
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.font-0 {
+  font-size: 0;
+}
+
+.width-full {
+  width: 100%;
+}
+
+/**header**/
+.nav-contact {
+  background-color: rgb(220, 60, 69);
+  padding: 1rem 0;
+}
+
+.nav-contact-item a {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+
+.nav-contact-item1 a {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  background-color: rgb(242, 242, 242);
+  padding: 1rem 0;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgb(27, 30, 36);
+}
+.brand strong {
+  color: rgb(220, 60, 69);
+}
+
+.nav-item a {
+  margin-left: 1.5rem;
+  color: rgb(27, 30, 36);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.nav-item a i {
+  margin-left: 0.5rem;
+}
+
+.nav-item .active {
+  background-color: #eb5f61;
+  color: rgb(255, 255, 255);
+  padding: 1.9rem 1.2rem;
+}
+
+/**hero**/
+.hero {
+  background: url(../media/banner-1.jpg) no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(27, 30, 36);
+}
+.hero h4 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: rgb(27, 30, 36);
+}
+
+.hero-container {
+  width: 40%;
+  float: left;
+  margin-left: 10rem;
+  margin-top: 16rem;
+}
+
+/**services**/
+.article-margin {
+  margin-top: 5rem;
+}
+
+.service-item {
+  padding: 3rem 1rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.service-item .img-service {
+  width: 30%;
+  height: auto;
+}
+.service-item h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(27, 30, 36);
+}
+
+/**solution**/
+.solution {
+  background-color: rgb(242, 242, 242);
+}
+.solution .heading {
+  text-transform: none;
+}
+.solution .btn, .solution .btn-primary {
+  background-color: rgb(242, 242, 242);
+}
+
+/**consulting**/
+.consulting i {
+  font-size: 5rem;
+  color: rgb(220, 60, 69);
+}
+.consulting .heading {
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
+  text-transform: none;
+}
+.consulting img {
+  border-radius: 6px;
+}
+
+/**quote**/
+.quote {
+  background-color: rgb(220, 60, 69);
+  color: rgb(255, 255, 255);
+  padding: 4rem 0;
+  margin: 3rem 0;
+}
+.quote h5 {
+  font-size: 1.3rem;
+}
+.quote p {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.7;
+}
+.quote .btn-primary {
+  border: 1px solid rgb(255, 255, 255);
+  font-weight: 100;
+}
+
+/**leader*/
+.leader {
+  padding-top: 6rem;
+}
+.leader .heading {
+  margin-top: 6rem;
+  text-transform: none;
+}
+
+/**client**/
+.client {
+  background-color: rgb(242, 242, 242);
+  position: relative;
+}
+.client img {
+  margin-top: 2rem;
+  filter: grayscale(100%);
+  width: 10%;
+}
+
+/**footer**/
+.footer {
+  background-color: #343a40;
+}
+.footer h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(147, 160, 189);
+  margin-bottom: 1.5rem;
+}
+.footer a {
+  color: rgb(147, 160, 189);
+  letter-spacing: 1.6;
+}
+.footer li {
+  margin-top: 1rem;
+}
+.footer .site {
+  margin-left: 4rem;
+}
+.footer .footer-nav a {
+  margin-right: 2rem;
+}/*# sourceMappingURL=style.css.map */
